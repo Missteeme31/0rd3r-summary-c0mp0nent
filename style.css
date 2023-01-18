@@ -1,0 +1,144 @@
+/* a minimalist set of CSS resets */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.5;
+  background: url("https://cdn.glitch.global/ba57e5c1-f683-48bf-ab2f-c3bc2d3139b1/pattern-background-mobile.svg?v=1670011803419")
+    no-repeat;
+  background-size: cover;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+.container {
+  width: 375px;
+  background-color: white;
+  margin: auto;
+  border-radius: 20px;
+}
+.image-container img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.bottom-main-component h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.order-info {
+  text-align: center;
+  margin: 15px 15px 30px 15px;
+  color: hsl(224, 23%, 55%);
+}
+
+.annual-plan-container {
+  display: flex;
+  width: 320px;
+  height: 75px;
+  background-color: hsl(225, 100%, 98%);
+  margin: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.music-note-image {
+  display: flex;
+  width: 25%;
+}
+.music-note-image img {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+.annual-plan-details {
+  width: 50%;
+}
+.detail-1 {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.detail-2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+}
+.change-link {
+  width: 25%;
+  padding-top: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.payment-button {
+  display: flex;
+  width: 100%;
+  height: 75px;
+}
+
+button {
+  margin: auto;
+  width: 320px;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px hsl(224, 23%, 55%);
+}
+
+.cancel {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+
+  text-transform: capitalize;
+}
+.cancel a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 300px;
+  }
+  .annual-plan-container {
+    width: 240px;
+  }
+  button {
+    width: 240px;
+  }
+}
